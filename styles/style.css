@@ -1,0 +1,134 @@
+.container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 1000px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title2 {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.title3 {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.btnpos {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.btnpos2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.frame2 {
+    justify-content: center;
+    display: flex;
+    max-height: 1000px;
+    margin-top: 200px;
+}
+
+.socials {
+    padding: 30px;
+}
+
+.hero {
+    background-color: darkgrey;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.hero2 {
+    margin: 20px;
+    background-color: darkgrey;
+    border-radius: 20px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+}
+
+.hero2 img {
+    justify-content: flex-end;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30px;
+    flex-wrap: wrap;
+
+}
+
+.circle {
+    width: 125px;
+    height: 125px;
+    background-color: darkgrey;
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circles h2 {
+    justify-content: center;
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%; /* Clips the image into a circle */
+}
+
+/* Apply some basic styling */
+.button-container {
+    text-align: center;
+}
+
+.buttons {
+    background-color: darkgrey;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons:hover {
+    background-color: #0056b3;
+}
+
+.buttons.active {
+    background-color: #004295;
+}
