@@ -1,3 +1,16 @@
+body {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+
+}
+
 .container {
     justify-content: center;
     display: flex;
@@ -19,11 +32,23 @@
     margin-left: 20px;
 }
 
+.navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+}
+
 .title3 {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+    padding-left: 10px;
 }
 
 .btnpos {
@@ -87,6 +112,17 @@
     padding-left: 15px;
 }
 
+.hero4 {
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    min-height: 100px;
+    padding: 10px;
+    width: 90%;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
 .playbuttons {
     justify-content: center;
 }
@@ -128,6 +164,7 @@
 /* Apply some basic styling */
 .button-container {
     text-align: center;
+    padding: 10px;
 }
 
 .buttons {
@@ -147,4 +184,179 @@
 
 .buttons.active {
     background-color: #004295;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-music {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.icon {
+    flex: 1;
+    text-align: center;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.icon img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+.radiotask {
+    display: flex;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee; /* Grey background for the card */
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 100px;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative; /* For positioning the line */
+}
+
+.card input[type="radio"] {
+    background: transparent; /* Make the radio button transparent */
+    margin-right: 10px;
+}
+
+.task-checkbox:checked + label {
+    color: green;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 10px;
+    background: green;
+    transform: translateY(-1px); /* Center the line vertically */
+}
+
+.horizontal-line {
+    border: none;
+    height: 2px;
+    background-color: #333; /* Color of the horizontal line */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+
+.cd-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cd {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 5s infinite linear;
+}
+
+.spin {
+    width: 80px; /* Adjust the size of your CD image */
+    height: 80px; /* Adjust the size of your CD image */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply basic styling to the music player */
+
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-controls {
+    margin-top: 10px;
+}
+
+#progress-container {
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background: #007BFF;
+    border-radius: 3px;
+}
+
+.progress-container {
+    background: #eee;
+    height: 5px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: #007BFF;
+    border-radius: 3px;
+}
+
+.options {
+    background-color: darkgray;
+    border-radius: 20px;
+    min-height: 125px;
+    width: 45%;
+    margin: 10px;
+   padding-top: 20px;
+}
+
+.music-options {
+    justify-content: center;
 }
